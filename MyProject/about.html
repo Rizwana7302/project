@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+.selection{
+    width:100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #ae0560 ;
+}
+
+span{
+    color:aqua;
+}
+
+.logo img{
+    width: 150px;
+    height:140px;
+    margin-left: 20px;
+}
+
+.homepage a{
+    text-decoration: none;
+    padding: 18px;
+    font-size: 20px;
+    color: #fff;
+}
+.homepage a:hover{
+    color: aqua;
+}
+.design i{
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display:inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;    
+    font-size: 20px;
+}
+ul li a:hover{
+    color: aqua;
+}
+ul li ul.dropdown li{
+    display: block;
+    margin-left: -40px;
+}
+ul li ul.dropdown{
+    width:150px;
+    background:#ae0560;
+    position: absolute;
+    z-index: 999;
+    margin-top:5px;
+    text-align: center;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    text-align: center;
+    margin-left: -30px;
+}
+.breads{
+    width:50%;
+    height: 80px;
+    background-color:#ae0560;
+    font-size: 30px;
+    margin-left:350px;
+    margin-top: 120px;
+    color:white;
+    border-radius:30px 10px 30px;
+    text-align: center;
+    line-height: 65px;
+    -webkit-text-stroke:2px #ae0560;
+    color:transparent;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    background-position: -800px 0;
+    animation:backcolor 5s linear infinite;
+}
+@keyframes backcolor{
+    100%{
+        background-position:0 0;
+    }
+}
+.para{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.para img{
+    width: 500px;
+    height: 300px;
+    margin-right: 80px;
+}
+.para p{
+    font-size: 18px;
+    margin-right:50px;
+}
+.para2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.para3 img{
+    width:50px;
+    height: 60px;
+    margin-left: 60px;
+}
+.para3 h3{
+    color: darkmagenta;
+}
+.para3 p{
+    color:crimson;
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+    <div class="selection">
+        <div class="logo">
+            <img src="C:\Users\Admin\Pictures\Saved Pictures\th-removebg-preview (1).png" alt="cake">
+            </div>
+            <div class="arbakery">
+            <p style="font-size: 60px; color:#fff; margin-left:-0px;">B<span>A</span>KE<span>R</span>Y</p>
+            </div>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Cakes</a>  
+                <ul class="dropdown">  
+                    <li><a href="cakes.html">Photic Cakes</a></li>
+                    <li><a href="#varoius_cake">Various Cakes</a></li>
+                    <li><a href="#bread_name">Bread</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Beverages</a>
+                    <ul class="dropdown">  
+                        <li><a href="beverag.html">Hot Drinks</a></li>
+                        <li><a href="hot.html">Cold Drinks</a></li>
+                    </ul>
+                    </li>
+                <li><a href="bread.html">Sweets</a></li>
+                <li><a href="#">Sandwich</a>
+                <ul class="dropdown">  
+                    <li><a href="sandwich.html">Grilled Sandwich</a></li>
+                    <li><a href="sandwich.html">Pufs & Samosa</a></li>
+                </ul>
+                </li>
+                <li><a href="login.html">login</a></li>
+              </ul>
+              <div class="design">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div> 
+        </div> 
+        <div class="breads">
+            <h1>Quality And Services</h1>
+            </div>    
+        <div class="para">
+            <image src="https://tse1.mm.bing.net/th?id=OIP.Owp-iGEWjhQ5CJiuypUzDAHaEO&pid=Api&P=0&h=180">
+                <p>While quality is our hallmark, service is our pride. When you step into our outlets<br>
+                   you will surely observe how we’ve painstakingly put processes in place to make<br>
+                   your visit worthwhile and comfortable. And our people have been trained<br>
+                   to understand your whims as well as your needs. However, should you<br>
+                   have a grievance you can rest assured that it would be attended to<br>
+                   politely and immediately.<br><br>
+                             To take it a step further, our quality control team follows<br>
+                     impeccable specs. Our vendors have been selected after <br>
+                     meticulous screening. Every batch of our groceries are <br>
+                     scrupulously checked and immaculately tested when they arrive<br>
+                      at our premises. These are then carefully stored to avoid any kind of contamination.
+                </p>            
+        </div>
+        <div class="breads">
+            <h1>Hygiene</h1>
+            </div>  
+            <div class="para">
+                <p>Since we have a wide variety of confectionery products,
+                     hygiene takes<br> the highest priority for our entire workforce. Our food handlers<br>
+                      have been trained to follow sound practices to<br> ensure that anything that we serve is safe for 
+                      consumption. <br><br>
+                   To ensure that, we not only stipulate that they wear head caps and gloves, <br>but we also
+                       conduct periodic audits on how they maintain their <br>personal hygiene from trimming nails to self 
+                    grooming.<br> So when your loaf of bread gets sliced, it will be done<br> by hygienic hands. <br>
+                 </p>
+              <image src="https://tse2.mm.bing.net/th?id=OIP.15PoIwib9r8Dr2gsC697QAHaEK&pid=Api&P=0&h=180">
+            </div>
+            <div class="breads">
+                <h1>Our Values</h1>
+                </div> 
+            <div class="para2">
+                <div class="para3">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.0MUJfL1fByZHR_lgxQ_7QgHaG7&pid=Api&P=0&h=180">
+                    <h3>BAKED WITH LOVE</h3>
+                    <p>Our passion for baking is poured<br> into every recipe, serving smiles<br> on a plate everyday.</p>
+                </div>
+                <div class="para3">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.P8A7nLudnY3kBNoYi5KT7AHaJl&pid=Api&P=0&h=180">
+                    <h3>AUTHENTIC RECIPIES</h3>
+                    <p>Our products are based on traditional <br>home-style recipes, using fresh <br>ingredients and no preservatives or chemicals.</p>
+                    </div>
+                <div class="para3">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.6qTyB04IkNdWE2sKZUonJQAAAA&pid=Api&P=0&h=180">
+                    <h3>COMMITED TO QUALITY</h3>
+                    <p>From our ingredients to our kitchen<br> operations & guest services, we <br>always prioritize quality.
+                    </p>
+                </div>
+                <div class="para3">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.nAt78aY_-WkrgRk4_DFmFQHaIM&pid=Api&P=0&h=180">
+                    <h3>HONESTLY PRICED</h3>
+                    <p>We constantly strive to offer the<br> best products at the right prices <br>operations & guest services</p>
+                </div>
+            </div>
+</body>
+</html>

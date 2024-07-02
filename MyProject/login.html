@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.selection{
+     width:100%;
+     height: 90px;
+     top: 0;
+     left: 0;
+     display: flex;
+     align-items: center;
+     position: fixed;
+     z-index: 3;
+     background-color: #ae0560 ;
+        }       
+span{
+    color:aqua;
+}
+                
+.logo img{
+     width: 150px;
+     height:140px;
+     margin-left: 20px;
+ }
+                
+.homepage a{
+     text-decoration: none;
+     padding: 18px;
+     font-size: 20px;
+     color: #fff;
+}
+.homepage a:hover{
+     color: aqua;
+}
+.design i{
+     padding: 15px;
+     font-size: 20px;
+     color: #fff;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display:inline-block;
+    position: relative;
+
+}
+ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;    
+    font-size: 20px;
+}
+ul li a:hover{
+    color: aqua;
+}
+ul li ul.dropdown li{
+    display: block;
+    margin-left: -40px;
+}
+ul li ul.dropdown{
+    width:150px;
+    background:#ae0560;
+    position: absolute;
+    z-index: 999;
+    margin-top:5px;
+    text-align: center;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    text-align: center;
+    margin-left: -30px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image:url("https://tse2.mm.bing.net/th?id=OIP.kKd9lbMEOpZvV4SopDqgoAHaEK&pid=Api&P=0&h=180");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:blueviolet;
+    animation:animateBg 5s linear infinite;
+}
+@keyframes animateBg {
+    100%{
+        filter:hue-rotate(360deg);
+    } 
+}
+.order{
+    width:30%;
+    height: 500px;
+    background: transparent;
+    margin-top: 90px;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    text-align: center;
+}
+::placeholder{
+    text-align: center;
+}
+ .btn2{
+    width:150px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color:rgba(89, 0, 255, 0.562);
+    margin-bottom: 20px;
+    color:azure;
+}
+input{
+    border-radius: 10px;
+    width:300px;
+    height:40px;
+    font-size: 15px;
+}
+</style>
+</head>
+         <body>
+            <div class="selection">
+                <div class="logo">
+                    <img src="C:\Users\Admin\Pictures\Saved Pictures\th-removebg-preview (1).png" alt="cake">
+                </div>
+                <div class="arbakery">
+                    <p style="font-size: 60px; color:#fff; margin-left:-0px;">B<span>A</span>KE<span>R</span>Y</p>
+                </div>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Cakes</a>  
+                    <ul class="dropdown">  
+                        <li><a href="cakes.html">Photic Cakes</a></li>
+                        <li><a href="#various_cake">Various Cakes</a></li>
+                        <li><a href="#bread_name">Bread</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Beverages</a>
+                        <ul class="dropdown">  
+                            <li><a href="beverag.html">Hot Drinks</a></li>
+                            <li><a href="hot.html">Cold Drinks</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="bread.html">Sweets</a></li>
+                    <li><a href="#">Sandwich</a>
+                    <ul class="dropdown">  
+                        <li><a href="sandwich.html">Grilled Sandwich</a></li>
+                        <li><a href="sandwich.html">Pufs & Samosa</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="login.html">login</a></li>
+                  </ul>
+                  <div class="design">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div> 
+            </div>
+            <div id="container">
+                <div class="order">
+                    <h1 style="text-align: center;">My Order<h1>
+                        <form action="" onsubmit="fun6()">
+                            <input type="text" placeholder= "Name" onblur="fun()" id="name">
+                            <label id="name2" style="visibility: hidden;">Invalid Your Name</label>
+                            <input type="email" placeholder="Email-Address"onblur=fun3() id="mailid">
+                            <label id="mail2" style="visibility: hidden;">Invalid Your Mail-id</label>
+                            <input type="text" placeholder="Phn no" id="phone" onblur="fun5()">
+                            <label id="phn2" style="visibility: hidden;">Invalid Your Phn No</label>
+                            <input type="text" placeholder="Address"id="address1">
+                            <label id="add2" style="visibility: hidden;">Invalid Your Address</label>
+                            <button  class="btn2">Order Now</button>
+            <script>
+                             let a=document.getElementById("name");
+                             let mail=document.getElementById("mailid");
+                             phone=document.getElementById("phone")
+                             let addr=document.getElementById("address1")
+                function fun(){
+                      a.value=a.value.toLowerCase();
+                              
+                        if(a.value==""){
+                          document.getElementById("name2").style.color="red";
+                          document.getElementById("name2").style.visibility="visible";
+                      }
+                       else{
+                        document.getElementById("name2").style.visibility="hidden";
+                          }
+                        }
+                    function fun3(){
+                        mail.value=mail.value.toLowerCase()
+                    
+                        if(mail.value==""){
+                          document.getElementById("mail2").style.color="red";
+                          document.getElementById("mail2").style.visibility="visible";
+                      }
+                       else{
+                        document.getElementById("mail2").style.visibility="hidden";
+                          }
+                    }
+                    function fun5(){
+                        if(isNaN(phone.value)||phone.value.trim().length!=10){
+                            document.getElementById("phn2").style.visibility="visible"; 
+                            document.getElementById("phn2").style.color="red";  
+                    }
+                    else{
+                        document.getElementById("phn2").style.visibility="hidden";
+                }
+            } 
+                 function fun6() {
+                    if(a.value=="" || mail.value=="" || phone.value=="" ||addr==""){
+                        alert("Please Fill The Above Details")
+                    }
+                 else{
+                    alert("Thank u for ordering!!!")
+                 } 
+                }
+                 </script>
+                </form>        
+                </div>
+                </div>
+                     
+            
+         </body>
